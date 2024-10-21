@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 
-from django.conf.global_settings import MEDIA_ROOT, MEDIA_URL
+from django.conf.global_settings import MEDIA_ROOT, MEDIA_URL, SESSION_COOKIE_PATH, SESSION_COOKIE_AGE
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -123,6 +123,7 @@ STATIC_URL = 'static/'
 
 MEDIA_ROOT = BASE_DIR / 'uploads'
 MEDIA_URL = '/user-media/'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
