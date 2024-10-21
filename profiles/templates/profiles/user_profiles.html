@@ -1,0 +1,19 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Profiles</title>
+</head>
+<body>
+    <ul>
+        {% for picture in pictures %}
+        <li>
+            <img src="{{ picture.image.url }}" alt="{{ picture.image }}">
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
